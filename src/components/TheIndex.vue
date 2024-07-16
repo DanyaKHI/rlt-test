@@ -1,18 +1,21 @@
 <script>
 import TheInventory from '../components/TheInventory.vue'
-  export default {
+import AppSkeleton from '../components/AppSkeleton.vue'
+
+export default {
   name: 'TheIndex',
   components: {
     TheInventory,
+    AppSkeleton
   }
-  }
+}
 </script>
 
 <template>
     <div class="container">
-        <div>s</div>
+        <AppSkeleton img="../assets/Img.svg" title="ddd" text="fddddf"/>
         <TheInventory/>
-        <div>s</div>  
+        <AppSkeleton title="ddd" :closeBtn="true"/> 
     </div>
 </template>
   
