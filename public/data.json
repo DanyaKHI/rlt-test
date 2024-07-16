@@ -1,0 +1,25 @@
+{
+  "items": [
+    {
+      "id": 0,
+      "count": 4,
+      "row": 1,
+      "col": 1,
+      "img": "item1"
+    },
+    {
+      "id": 1,
+      "count": 2,
+      "row": 1,
+      "col": 2,
+      "img": "item2"
+    },
+    {
+      "id": 2,
+      "count": 5,
+      "row": 1,
+      "col": 3,
+      "img": "item3"
+    }
+  ]
+}
