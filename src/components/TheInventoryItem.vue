@@ -13,7 +13,7 @@ const props = defineProps({
     row: Number,
 })
 const { item, col, row } = toRefs(props)
-const emit = defineEmits('updateItems')
+const emit = defineEmits(['updateItems','clickItem'])
 
 
 const drag = (ev) => {
@@ -50,7 +50,7 @@ const saveData = (data) => {
 
 <template>
     <div class="item_wrapper" @drop="drop" @dragover="allowDrop">
-        <div class="item" v-if="item" :id="item.id">
+        <div class="item" v-if="item" :id="item.id" @click="() => { emit('clickItem') }">
             <img class="item__img" :src="'images/inventoryItems/'+item.img+'.svg'" :id="item.id" @dragstart="drag"/>
             <div class="item__count">{{item.count}}</div>
         </div>
